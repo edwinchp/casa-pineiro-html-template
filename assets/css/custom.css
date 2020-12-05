@@ -1,0 +1,39 @@
+.table-name a {
+    font-size: 18px;
+}
+
+.table-name>.row {
+    padding: 1px;
+    padding-top: 3px;
+}
+
+.table-name i {
+    font-size: 25px;
+    color: #E74C3C;
+}
+
+.table-price {
+    font-size: 18px;
+}
+
+.table-price s{
+    font-size: 15px;
+}
+
+.table-options i {
+    font-size: 23px;
+    padding-right: 10px;
+}
+
+.modal-img{
+    width: 400px;
+}
+
+.table-button a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.table-button a:hover{
+    color: white;
+}
