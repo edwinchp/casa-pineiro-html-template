@@ -37,3 +37,7 @@
 .table-button a:hover{
     color: white;
 }
+
+.table-date{
+    font-size: 17px;
+}
