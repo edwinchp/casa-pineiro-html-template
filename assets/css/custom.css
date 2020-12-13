@@ -41,3 +41,12 @@
 .table-date{
     font-size: 17px;
 }
+
+.input-group-addon i{
+    font-size: 35px;
+}
+
+.table-input{
+    padding-right: 40px;
+    margin-right: 50px;
+}
