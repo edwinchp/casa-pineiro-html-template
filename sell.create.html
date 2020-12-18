@@ -224,13 +224,17 @@
                                                                 x-placement="bottom-start"
                                                                 style="position: absolute; transform: translate3d(0px, 41px, 0px); top: 0px; left: 0px; will-change: transform;">
                                                                 <a class="dropdown-item waves-light waves-effect"
-                                                                    href="#">Guardar para después</a>
+                                                                    href="#" data-toggle="modal"
+                                                                    data-target="#saveModal">Guardar para después</a>
                                                                 <a class="dropdown-item waves-light waves-effect"
-                                                                    href="#">Crear producto</a>
+                                                                    href="#" data-toggle="modal"
+                                                                    data-target="#createProductModal">Crear producto</a>
                                                                 <a class="dropdown-item waves-light waves-effect"
-                                                                    href="#">Crear cliente</a>
+                                                                    href="#" data-toggle="modal"
+                                                                    data-target="#createClientModal">Crear cliente</a>
                                                                 <a class="dropdown-item waves-light waves-effect"
-                                                                    href="#">Quitar productos</a>
+                                                                    href="#" data-toggle="modal"
+                                                                    data-target="#cleanCartModal">Quitar productos</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -249,9 +253,10 @@
                                                                         <span class="input-group-addon input-icon"><i
                                                                                 class="icofont icofont-bar-code"></i></span>
                                                                         <input type="text"
-                                                                            class="form-control form-control-lg"
+                                                                            class="form-control form-control-lg input-autofocus"
                                                                             title="" data-toggle="tooltip"
-                                                                            placeholder="Inserte código de barras">
+                                                                            placeholder="Inserte código de barras"
+                                                                            id="bar-code">
                                                                     </div>
                                                                     <div class="input-group">
                                                                         <span class="input-group-addon input-icon"><i
@@ -622,6 +627,137 @@
     </div>
     <!-- Modal end -->
 
+    <!-- Modal begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="saveModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Advertencia</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                ¿Seguro que desea guardar esta venta? Podrá retomarla luego.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Guardar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+    <!-- Modal begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="createProductModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Crear producto</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Nombre</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" autofocus="on">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Código de barras</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Precio de compra</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Cantidad</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" value="3">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Crear</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+
+    <!-- Modal begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="createClientModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Crear cliente</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Nombre</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control input-autofocus">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Saldo inicial</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" value="0">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Crear</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
 
 
     <!-- Warning Section Starts -->
@@ -686,6 +822,7 @@
     <script src="assets/js/pcoded.min.js"></script>
     <script src="assets/js/demo-12.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
