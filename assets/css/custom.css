@@ -50,3 +50,27 @@
     padding-right: 40px;
     margin-right: 50px;
 }
+
+/**
+    Plus icon
+*/
+.plus-icon:hover{
+    color: white;
+}
+
+.plus-icon-primary{
+    color: #4680ff;
+}
+
+.plus-icon-danger{
+    color: #FC6180;
+}
+
+.plus-icon-success{
+    color: #93BE52;
+}
+
+.plus-icon-warning{
+    color: #FFB64D;
+}
+
