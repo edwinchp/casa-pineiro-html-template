@@ -132,13 +132,11 @@ justify-content: start;
     display: flex;
     align-items: center;
     padding-left: 1em;
-    background-color: blue;
 }
 
 .section-header-buttons{
     display: flex;
     align-items: center;
-    background-color: grey;
 
 }
 .section-header-buttons a{
@@ -151,5 +149,12 @@ justify-content: start;
     display: flex;
     align-items: center;
     margin-left: 250px;
-    background-color: red;
+    padding-top: 1em;
+}
+
+
+@media (max-width: 1000px){
+    .section-header-search{
+        margin: 0px;
+    }
 }
