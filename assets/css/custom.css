@@ -51,6 +51,37 @@
     margin-right: 50px;
 }
 
+.table-existing-product{
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.existing-product div{
+    display: inline-block;
+}
+
+.table-new-product input{
+    font-size: 18px;
+}
+
+.table-bought-product input{
+    font-size: 18px;
+}
+.table-sell-product input{
+    font-size: 18px;
+}
+
+.table-bought-product{
+    font-size: 18px;
+    text-align: center;
+}
+
+.table-sell-product{
+    font-size: 20px;
+    text-align: center;
+}
+
 /**
     Plus icon
 */
