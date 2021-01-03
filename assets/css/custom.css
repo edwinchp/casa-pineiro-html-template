@@ -121,3 +121,35 @@
 .btn-primary-a{
     color: white !important;
 }
+
+.section-header{
+display: flex;
+flex-flow: row wrap;
+justify-content: start;
+}
+
+.section-header-title{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    background-color: blue;
+}
+
+.section-header-buttons{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+
+}
+.section-header-buttons a{
+    margin: 5px;
+    margin-bottom: 10px;
+
+}
+
+.section-header-search{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    background-color: red;
+}
