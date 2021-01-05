@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nueva venta</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="CodedThemes">
+    <meta name="keywords"
+        content="flat ui, admin  Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="CodedThemes">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a class="mobile-search morphsearch-search" href="#">
+                            <i class="ti-search"></i>
+                        </a>
+                        <a href="index.html">
+                            CASA PINEIRO
+                        </a>
+                        <a class="mobile-options">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <a href="#!">
+                                    <i class="ti-bell"></i>
+                                    <span class="badge bg-c-pink"></span>
+                                </a>
+                                <ul class="show-notification">
+                                    <li>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center" src="assets/images/user.png"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">John Doe</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
+                                                    elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center" src="assets/images/user.png"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
+                                                    elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center" src="assets/images/user.png"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
+                                                    elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="user-profile header-notification">
+                                <a href="#!">
+                                    <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <span>Juan Chi Balam</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="ti-home"></i> Casa Pineiro
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-home"></i> Tendejón Evelyn
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="supplier.index.html">
+                                            <i class="ti-truck"></i> Provedores y servicios
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user.index.html">
+                                            <i class="ti-user"></i> Usuarios
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth-normal-sign-in.html">
+                                            <i class="ti-layout-sidebar-left"></i> Cerrar sesión
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-inner-content">
+
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <!-- Page-header start -->
+                            <div class="page-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="card pt-3">
+                                            <div class="section-header">
+
+                                                <div class="section-header-title">
+                                                    <div class="card-header">
+                                                        <h4>Productos en inventario</h4>
+                                                    </div>
+                                                </div>
+
+                                                <div class="section-header-buttons">
+                                                    <a href="product.create.html" class="btn btn-success btn-success-a"
+                                                        data-toggle="tooltip" data-placement="bottom"
+                                                        data-original-title="Nuevo producto">Nuevo</a>
+                                                </div>
+
+                                                <div class="col-xl-4 section-header-search">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="name"><i
+                                                                class="icofont icofont-search"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Buscar...">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-block table-border-style">
+                                                <div class="table-responsive pr-4 pl-4">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Nombre</th>
+                                                                <th>Existentes</th>
+                                                                <th>Nuevos</th>
+                                                                <th>Precio de compra</th>
+                                                                <th>Precio de venta</th>
+                                                                <th>Imagen</th>
+                                                                <th>Opciones</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="table-name">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <a href="product.edit.html">
+                                                                                Cheetos bolitas 30g
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-existing-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11 existing-product">
+
+                                                                            <div class="product-current-qty">
+                                                                                105
+                                                                            </div>
+                                                                            <div class="add-existing">
+                                                                                <div class="arrow">
+                                                                                    <i class="ti-arrow-right"></i>
+                                                                                </div>
+                                                                                <div class="new-product-sum">
+                                                                                    119
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-new-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="number"
+                                                                                value="14">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-bought-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="number"
+                                                                                value="6">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-sell-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="number"
+                                                                                value="9">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="assets/images/bolitas.jpg"><img
+                                                                            src="assets/images/bolitas.jpg"
+                                                                            target="_blank" class="img-40 rounded">
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-options">
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Guardar cambios"><i
+                                                                                class="ti-check"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Cancelar"><i
+                                                                                class="ti-close"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="table-name">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <a href="product.edit.html">Ruffles
+                                                                                queso 40g</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+
+                                                                <td class="table-existing-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11 existing-product">
+                                                                            <div class="product-current-qty">
+                                                                                4
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-new-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="text"
+                                                                                value="" data-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                data-original-title="Edite este producto para usar esta opción"
+                                                                                disabled>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-bought-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            $12
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-sell-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <strong>$14</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+
+
+                                                                <td>
+                                                                    <a href="#!" data-toggle="modal"
+                                                                        data-target="#myModal"><img
+                                                                            src="assets/images/ruffles.jpg" alt=""
+                                                                            class="img-40 rounded">
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-options">
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Añadir al carrito"><i
+                                                                                class="ti-shopping-cart"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Editar"><i
+                                                                                class="ti-pencil-alt"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                    <div class="p-4">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination justify-content-end">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#"
+                                                                        tabindex="-1">Anterior</a>
+                                                                </li>
+                                                                <li class="page-item active"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Siguiente</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal delete product begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="deleteProduct">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Advertencia</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                ¿Seguro que desea eliminar este producto?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+    <!-- Modal delete client begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="deleteClient">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Advertencia</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                ¿Seguro que desea eliminar este cliente?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+    <!-- Modal delete client begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="confirmSell">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Advertencia</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                ¿Seguro que desea confirmar esta venta?<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Pagar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+    <!-- Modal begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="saveModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Advertencia</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                ¿Seguro que desea guardar esta venta? Podrá retomarla luego.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Guardar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+    <!-- Modal begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="createProductModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Crear producto</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Nombre</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" autofocus="on">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Código de barras</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Precio de compra</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Cantidad</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" value="3">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Crear</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+
+    <!-- Modal begin -->
+    <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        id="createClientModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Crear cliente</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <div class="icon-list-demo pb-3">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Nombre</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control input-autofocus">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Saldo inicial</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" value="0">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Crear</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
+        to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="assets/js/classie/classie.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/demo-12.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
