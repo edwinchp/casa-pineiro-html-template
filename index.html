@@ -111,11 +111,6 @@
                             </li>
                         </ul>
                         <ul class="nav-right">
-                            <li>
-                                <a href="">Nueva venta</a>
-                                <a href="">Nuevo producto</a>
-                            </li>
-
                             <li class="header-notification">
                                 <a href="#!">
                                     <i class="ti-bell"></i>
@@ -360,35 +355,37 @@
                                     </div>
                                     <!-- card1 end -->
                                     <!-- Statestics Start -->
-                                    <div class="col-md-12 col-xl-12">
-                                        <div class="card">
-
-                                            <div class="row pr-5 pl-5 pt-3">
-                                                <div class="col-xl-8">
+                                    <div class="col-sm-12">
+                                        <div class="card pt-3">
+                                            <div class="section-header">
+                                                <div class="section-header-title">
                                                     <div class="card-header">
                                                         <h4>Productos en inventario</h4>
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-4 pt-3">
-                                                    <div class="pcoded-search">
-                                                        <span class="searchbar-toggle"> </span>
-                                                        <div class="pcoded-search-box ">
-                                                            <input type="text" placeholder="Buscar...">
-                                                            <span class="search-icon"><i class="ti-search"
-                                                                    aria-hidden="true"></i></span>
-                                                        </div>
+                                                <div class="section-header-buttons">
+                                                    <a href="product.create.html" class="btn btn-success btn-success-a"
+                                                        data-toggle="tooltip" data-placement="bottom"
+                                                        data-original-title="Nuevo producto">Nuevo</a>
+                                                </div>
+                                                <div class="col-xl-4 section-header-search">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="name"><i
+                                                                class="icofont icofont-search"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Buscar...">
                                                     </div>
                                                 </div>
                                             </div>
 
-
                                             <div class="card-block table-border-style">
-                                                <div class="table-responsive pr-5 pl-5">
+                                                <div class="table-responsive pr-4 pl-4">
                                                     <table class="table table-hover">
                                                         <thead>
                                                             <tr>
                                                                 <th>Nombre</th>
-                                                                <th>Precio</th>
+                                                                <th>Existentes</th>
+                                                                <th>Precio de compra</th>
+                                                                <th>Precio de venta</th>
                                                                 <th>Imagen</th>
                                                                 <th>Opciones</th>
                                                             </tr>
@@ -398,16 +395,42 @@
                                                                 <td class="table-name">
                                                                     <div class="row">
                                                                         <div class="col-xl-11">
-                                                                            <a href="" data-toggle="modal"
-                                                                                data-target="#myModal">Cheetos
-                                                                                bolitas 30g</a>
+                                                                            <a href="product.edit.html">
+                                                                                Cheetos bolitas 30g
+                                                                            </a>
                                                                         </div>
                                                                     </div>
+                                                                </td>
 
+
+                                                                <td class="table-existing-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11 existing-product">
+                                                                            <div class="product-current-qty">
+                                                                                4
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
-                                                                <td class="table-price">
-                                                                    $14
+
+
+                                                                <td class="table-bought-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            $12
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
+
+                                                                <td class="table-sell-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <strong>$14</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+
                                                                 <td>
                                                                     <a href="#!" data-toggle="modal"
                                                                         data-target="#myModal"><img
@@ -417,25 +440,58 @@
                                                                 </td>
                                                                 <td>
                                                                     <div class="table-options">
-                                                                        <a href="#"><i class="ti-shopping-cart"></i></a>
-                                                                        <a href="#"><i class="ti-settings"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Añadir al carrito"><i
+                                                                                class="ti-shopping-cart"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Editar"><i
+                                                                                class="ti-settings"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
                                                                 <td class="table-name">
                                                                     <div class="row">
                                                                         <div class="col-xl-11">
-                                                                            <a href="" data-toggle="modal"
-                                                                                data-target="#myModal">Ruffles
+                                                                            <a href="product.edit.html">Ruffles
                                                                                 queso 40g</a>
                                                                         </div>
                                                                     </div>
 
                                                                 </td>
-                                                                <td class="table-price">
-                                                                    $12
+
+                                                                <td class="table-existing-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11 existing-product">
+                                                                            <div class="product-current-qty">
+                                                                                4
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
+
+
+                                                                <td class="table-bought-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            $12
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-sell-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <strong>$14</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+
+
                                                                 <td>
                                                                     <a href="#!" data-toggle="modal"
                                                                         data-target="#myModal"><img
@@ -445,46 +501,20 @@
                                                                 </td>
                                                                 <td>
                                                                     <div class="table-options">
-                                                                        <a href="#"><i class="ti-shopping-cart"></i></a>
-                                                                        <a href="#"><i class="ti-settings"></i></a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="table-name">
-                                                                    <div class="row">
-                                                                        <div class="col-xl-1" data-toggle="tooltip"
-                                                                            data-original-title="Oferta">
-                                                                            <i class="ti-tag"></i>
-                                                                        </div>
-                                                                        <div class="col-xl-11">
-                                                                            <a href="" data-toggle="modal"
-                                                                                data-target="#myModal">Doritos
-                                                                                Nacho 35g</a>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </td>
-                                                                <td class="table-price">
-                                                                    <s>$11</s>
-                                                                    <strong>$8</strong>
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#!" data-toggle="modal"
-                                                                        data-target="#myModal"><img
-                                                                            src="assets/images/doritos.jpg" alt=""
-                                                                            class="img-40 rounded">
-                                                                    </a>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="table-options">
-                                                                        <a href="#"><i class="ti-shopping-cart"></i></a>
-                                                                        <a href="#"><i class="ti-settings"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Añadir al carrito"><i
+                                                                                class="ti-shopping-cart"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Editar"><i
+                                                                                class="ti-settings"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+
 
                                                     <div class="p-4">
                                                         <nav aria-label="Page navigation example">
@@ -509,6 +539,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                     <div class="col-md-12 col-xl-12">
                                         <div class="card">
                                             <div class="card-header">
