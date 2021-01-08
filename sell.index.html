@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Pagos</title>
+    <title>Ventas</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -208,17 +208,17 @@
                                         <div class="card pt-3">
 
                                             <div class="section-header">
-                                                <div class="section-header-title pr-5">
+                                                <div class="section-header-title">
                                                     <div class="card-header">
-                                                        <h4>Pagos</h4>
+                                                        <h4>Ventas</h4>
                                                     </div>
                                                 </div>
                                                 <div class="section-header-buttons pr-5">
-                                                    <a href="payment.create.html" class="btn btn-success btn-success-a"
+                                                    <a href="sell.create.html" class="btn btn-success btn-success-a"
                                                         data-toggle="tooltip" data-placement="bottom"
-                                                        data-original-title="Nuevo Pago">Nuevo</a>
+                                                        data-original-title="Nueva venta">Nueva</a>
                                                 </div>
-                                                <div class="col-xl-4 section-header-search">
+                                                <div class="col-xl-5 section-header-search">
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="name"><i
                                                                 class="icofont icofont-search"></i></span>
@@ -232,10 +232,12 @@
                                                     <table class="table table-hover">
                                                         <thead>
                                                             <tr>
-                                                                <th>Concepto</th>
-                                                                <th>Monto</th>
-                                                                <th>Categoría</th>
+                                                                <th>Productos</th>
+                                                                <th>Cantidad</th>
+                                                                <th>Total</th>
                                                                 <th>Fecha</th>
+                                                                <th>Precio de venta</th>
+                                                                <th>Imagen</th>
                                                                 <th>Opciones</th>
                                                             </tr>
                                                         </thead>
@@ -245,7 +247,84 @@
                                                                     <div class="row">
                                                                         <div class="col-xl-11">
                                                                             <a href="product.edit.html">
-                                                                                Luz eléctica</a>
+                                                                                Cheetos bolitas 30g
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-number">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11 existing-product">
+
+                                                                            <div class="product-current-qty">
+                                                                                105
+                                                                            </div>
+                                                                            <div class="add-existing">
+                                                                                <div class="arrow">
+                                                                                    <i class="ti-arrow-right"></i>
+                                                                                </div>
+                                                                                <div class="new-product-sum">
+                                                                                    119
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-number">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="number"
+                                                                                value="14">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-number">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="number"
+                                                                                value="6">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="table-number">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="number"
+                                                                                value="9">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="assets/images/bolitas.jpg"><img
+                                                                            src="assets/images/bolitas.jpg"
+                                                                            target="_blank" class="img-40 rounded">
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-options">
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Guardar cambios"><i
+                                                                                class="ti-check"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="Cancelar"><i
+                                                                                class="ti-close"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="table-name">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <a href="product.edit.html">Ruffles
+                                                                                queso 40g</a>
                                                                         </div>
                                                                     </div>
 
@@ -253,32 +332,61 @@
 
                                                                 <td class="table-number">
                                                                     <div class="row">
-                                                                        <div class="col-xl-5">
-                                                                            $9999
+                                                                        <div class="col-xl-11 existing-product">
+                                                                            <div class="product-current-qty">
+                                                                                4
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </td>
 
-                                                                <td class="table-text">
+                                                                <td class="table-new-product">
                                                                     <div class="row">
-                                                                        <div class="col-xl-11" >
-                                                                            Consumo básico
+                                                                        <div class="col-xl-11">
+                                                                            <input class="form-control" type="text"
+                                                                                value="" data-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                data-original-title="Edite este producto para usar esta opción"
+                                                                                disabled>
                                                                         </div>
                                                                     </div>
                                                                 </td>
 
-                                                                <td class="table-text">
+                                                                <td class="table-number">
                                                                     <div class="row">
-                                                                        11/Enero/2021 5:45PM
+                                                                        <div class="col-xl-11">
+                                                                            $12
+                                                                        </div>
                                                                     </div>
+                                                                </td>
 
+                                                                <td class="table-sell-product">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-11">
+                                                                            <strong>$14</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+
+
+                                                                <td>
+                                                                    <a href="#!" data-toggle="modal"
+                                                                        data-target="#myModal"><img
+                                                                            src="assets/images/ruffles.jpg" alt=""
+                                                                            class="img-40 rounded">
+                                                                    </a>
                                                                 </td>
                                                                 <td>
                                                                     <div class="table-options">
                                                                         <a href="#" data-toggle="tooltip"
                                                                             data-placement="bottom"
+                                                                            data-original-title="Añadir al carrito"><i
+                                                                                class="ti-shopping-cart"></i></a>
+                                                                        <a href="#" data-toggle="tooltip"
+                                                                            data-placement="bottom"
                                                                             data-original-title="Editar"><i
-                                                                                class="ti-settings"></i></a>
+                                                                                class="ti-pencil-alt"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
