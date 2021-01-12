@@ -143,7 +143,7 @@ justify-content: start;
     align-items: center;
 
 }
-.section-header-buttons a{
+.section-header-buttons a, button{
     margin: 5px;
     margin-bottom: 10px;
 
@@ -155,6 +155,26 @@ justify-content: start;
     margin-left: 430px;
     padding-top: 1em;
 }
+
+.icofont-alt{
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    color: #fff;
+    padding: 0 !important;
+    font-size: 18px !important;
+    margin-right: 5px !important;
+    top: 0 !important;
+    position: absolute;
+}
+
+.color-card{
+    background-color: #4680ff !important;
+}
+
+.color-card h2{
+   color: #fff;
+}
+
 
 
 @media (max-width: 1300px){
