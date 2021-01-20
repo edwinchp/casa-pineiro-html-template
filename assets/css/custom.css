@@ -146,7 +146,6 @@ justify-content: start;
 .section-header-buttons a, button{
     margin: 5px;
     margin-bottom: 10px;
-
 }
 
 .section-header-search{
@@ -210,5 +209,9 @@ justify-content: start;
 @media (max-width: 1300px){
     .section-header-search{
         margin: 0px;
+    }
+
+    .section-header-buttons a, button{
+        margin: 1px;
     }
 }
